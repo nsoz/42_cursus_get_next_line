@@ -6,7 +6,7 @@
 /*   By: muoz <muoz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/06 16:55:09 by muoz              #+#    #+#             */
-/*   Updated: 2023/08/06 16:55:10 by muoz             ###   ########.fr       */
+/*   Updated: 2023/08/08 18:42:41 by muoz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,28 +96,28 @@ char	*get_holded_line(char *holder)
 	return (str);
 }
 
-char	*holder_refresher(char *tutucu)
+char	*holder_refresher(char *holder)
 {
 	int		i;
 	int		j;
 	char	*str;
 
 	i = 0;
-	while (tutucu[i] && tutucu[i] != '\n')
+	while (holder[i] && holder[i] != '\n')
 		i++;
-	if (!tutucu[i])
+	if (!holder[i])
 	{
-		free(tutucu);
+		free(holder);
 		return (NULL);
 	}
-	str = malloc(sizeof(char) * (ft_strlen(tutucu) - i + 1));
+	str = malloc(sizeof(char) * (ft_strlen(holder) - i + 1));
 	if (!str)
 		return (NULL);
 	i++;
 	j = 0;
-	while (tutucu[i])
-		str[j++] = tutucu[i++];
+	while (holder[i])
+		str[j++] = holder[i++];
 	str[j] = '\0';
-	free(tutucu);
+	free(holder);
 	return (str);
 }

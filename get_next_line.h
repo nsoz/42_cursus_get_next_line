@@ -6,7 +6,7 @@
 /*   By: muoz <muoz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/06 16:55:46 by muoz              #+#    #+#             */
-/*   Updated: 2023/08/06 18:51:31 by muoz             ###   ########.fr       */
+/*   Updated: 2023/08/08 18:44:01 by muoz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 12
+#  define BUFFER_SIZE 42
 # endif
 
 # include <unistd.h>
